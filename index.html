@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f7ed">
+<title>RE:WARD | 친환경 실천 리워드</title>
+<style>
+:root{--bg:#f5f7ed;--paper:#fff;--green:#247a45;--deep:#155333;--mint:#e5f3e6;--yellow:#f4c94f;--orange:#e98a39;--ink:#1e3025;--muted:#68766c;--line:#e2e9df;--red:#b94343;--shadow:0 8px 24px rgba(27,72,42,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;font-size:15px;line-height:1.5}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #e3b62f;outline-offset:2px}.app{max-width:1120px;margin:auto;padding:0 16px 96px}.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 0 14px}.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:23px;letter-spacing:-1px;color:var(--deep)}.brand-mark{width:36px;height:36px;border-radius:12px;background:var(--green);color:white;display:grid;place-items:center;font-size:20px}.top-actions{display:flex;gap:8px}.icon-btn{border:1px solid var(--line);background:white;border-radius:12px;min-height:42px;padding:0 12px;color:var(--deep);font-weight:700}.hero{background:linear-gradient(120deg,#e3f1df,#f8f5df);border:1px solid #dcebd8;border-radius:20px;padding:24px;display:flex;justify-content:space-between;gap:16px;align-items:center}.eyebrow{font-size:12px;font-weight:800;color:var(--green);letter-spacing:.08em}.hero h1{font-size:clamp(23px,4vw,32px);line-height:1.2;margin:7px 0 8px;letter-spacing:-1px}.hero p{margin:0;color:#526457;max-width:520px}.hero-art{font-size:64px;flex-shrink:0}.coin-card{margin-top:16px;background:var(--deep);color:white;border-radius:18px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:var(--shadow)}.coin-card small{color:#d6e9d9}.coin-num{font-size:30px;font-weight:900;color:#ffdc69;letter-spacing:-1px}.coin-label{font-size:13px;color:#e1eee3}.section{margin-top:28px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:13px}.section h2{font-size:20px;margin:0;letter-spacing:-.5px}.section-sub{color:var(--muted);font-size:13px;margin:3px 0 0}.text-btn{border:0;background:none;color:var(--green);font-weight:800;padding:8px}.grid{display:grid;grid-template-columns:1fr;gap:12px}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 3px 12px rgba(27,72,42,.035)}.mission{display:flex;gap:13px;align-items:flex-start}.mission-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:24px;flex-shrink:0;background:#eef6e9}.mission h3,.product h3{margin:0 0 3px;font-size:16px}.mission p,.product p{margin:0;color:var(--muted);font-size:13px}.pill{display:inline-flex;border-radius:99px;padding:3px 9px;font-size:11px;font-weight:900;margin:7px 5px 0 0}.easy{background:#e7f5cf;color:#4b7622}.normal{background:#fff0dc;color:#a75c12}.challenge{background:#dcefe2;color:#155333}.reward{font-weight:900;color:#9b7411;white-space:nowrap}.primary,.secondary,.danger{border:0;border-radius:10px;min-height:48px;padding:0 16px;font-weight:800}.primary{background:var(--green);color:white}.primary:hover{background:var(--deep)}.secondary{background:#eaf3e9;color:var(--deep);border:1px solid #d6e7d6}.danger{background:#fff0ef;color:var(--red)}.wide{width:100%}.mission .primary{margin-left:auto;align-self:center;min-width:86px}.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.quick{background:white;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:left;min-height:92px;color:var(--ink)}.quick strong{display:block;margin-top:7px}.quick span{font-size:22px}.feature-card{display:flex;align-items:center;gap:14px}.feature-card .thumb{width:76px;height:76px;border-radius:12px;background:#e7f1df;display:grid;place-items:center;font-size:36px;flex-shrink:0}.feature-card .grow{flex:1;min-width:0}.price{font-weight:900;color:#9b7411}.screen{display:none}.screen.active{display:block}.page-title{font-size:25px;margin:18px 0 5px;letter-spacing:-.7px}.back{border:0;background:none;color:var(--green);font-weight:800;padding:8px 0}.form-label{display:block;font-weight:800;margin:14px 0 6px}.field{width:100%;border:1px solid #ccd9ce;background:white;border-radius:10px;padding:12px;min-height:46px;color:var(--ink)}textarea.field{min-height:100px;resize:vertical}.hint{font-size:12px;color:var(--muted);margin:6px 0}.upload{border:2px dashed #b9d2bc;background:#f9fcf7;border-radius:12px;padding:18px;text-align:center}.upload input{max-width:100%}.preview{max-width:100%;max-height:240px;object-fit:contain;border-radius:10px;margin-top:12px;display:none}.notice{background:#fff8df;border:1px solid #f0dfa3;color:#6d5714;padding:12px;border-radius:10px;font-size:13px;margin:14px 0}.status{padding:5px 10px;border-radius:99px;font-size:12px;font-weight:900;display:inline-block}.approved{background:#e2f4e5;color:#17633a}.pending{background:#fff2d9;color:#96620b}.rejected{background:#fde8e8;color:#a12c2c}.result-box{text-align:center;padding:24px}.result-icon{font-size:50px}.result-box h2{margin:8px 0}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.tab{border:1px solid var(--line);border-radius:99px;padding:9px 14px;background:white;color:var(--muted);font-weight:800}.tab.active{background:var(--deep);color:white;border-color:var(--deep)}.empty{text-align:center;color:var(--muted);padding:28px 12px}.product{display:flex;gap:13px}.product .thumb{width:86px;height:86px;flex-shrink:0;border-radius:12px;background:#edf4e8;display:grid;place-items:center;font-size:38px}.product .grow{flex:1;min-width:0}.product .price-row{display:flex;align-items:center;justify-content:space-between;margin-top:8px;gap:8px}.small{font-size:12px;color:var(--muted)}.detail-art{font-size:76px;text-align:center;background:#edf4e8;border-radius:16px;padding:20px}.steps{padding-left:20px}.steps li{margin:7px 0}.history-row{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.history-row:last-child{border:0}.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:5}.nav-inner{width:min(1120px,100%);display:grid;grid-template-columns:repeat(4,1fr);padding:6px 8px env(safe-area-inset-bottom)}.nav-btn{border:0;background:none;color:#718075;padding:7px 3px;min-height:54px;font-size:11px;font-weight:800}.nav-btn span{display:block;font-size:20px}.nav-btn.active{color:var(--green)}.footer-note{font-size:11px;color:var(--muted);text-align:center;margin-top:26px}.toast{position:fixed;left:50%;bottom:82px;transform:translateX(-50%);background:#203b2a;color:white;padding:12px 16px;border-radius:12px;z-index:10;box-shadow:var(--shadow);max-width:calc(100% - 32px);font-size:13px;display:none}.modal-back{position:fixed;inset:0;background:#14251dbb;display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal{background:white;border-radius:16px;padding:20px;max-width:420px;width:100%}.modal h3{margin-top:0}.modal-actions{display:flex;gap:8px;margin-top:18px}.modal-actions>*{flex:1}.coin-chip{display:inline-flex;align-items:center;gap:5px;background:#fff5d5;color:#84600a;padding:5px 9px;border-radius:99px;font-weight:900;font-size:12px}.muted-box{background:#f3f6f1;padding:13px;border-radius:10px;font-size:13px;color:#526457}
+@media(min-width:600px){.app{padding-left:24px;padding-right:24px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.mission{min-height:104px}.quick-grid{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:900px){.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{padding:32px}.section{margin-top:34px}.nav-inner{justify-content:flex-end;display:flex;gap:22px}.nav-btn{min-width:90px}}
+@media(max-width:390px){.app{padding-left:16px;padding-right:16px}.hero{padding:18px}.hero-art{font-size:48px}.coin-card{padding:15px}.mission .primary{min-width:72px;padding:0 10px}.brand{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">↻</span> RE:WARD</div>
+  <div class="top-actions"><span id="cloudStatus" class="small" style="font-weight:800;color:#68766c">연결 확인 중</span><button class="icon-btn" id="profileBtn" aria-label="닉네임 설정">닉네임</button><button class="icon-btn" id="resetBtn" aria-label="로컬 시연 데이터 초기화">초기화</button></div>
+</header>
+
+<main>
+<section class="screen active" id="home">
+  <div class="hero">
+    <div><div class="eyebrow">HOYEON HIGH SCHOOL · GREEN ACTION</div><h1>작은 실천이 모여<br>더 나은 내일을 만들어요.</h1><p>친환경 활동을 인증하고 코인을 모아 업사이클링 도안을 만나보세요.</p></div>
+    <div class="hero-art" aria-hidden="true">🌱</div>
+  </div>
+  <div class="coin-card"><div><small>MY REWARD</small><div class="coin-label">사용 가능한 보유 코인</div></div><div><span class="coin-num" id="homeCoins">0</span> <span>🪙</span></div></div>
+  <section class="section">
+    <div class="section-head"><div><h2>오늘의 친환경 미션</h2><p class="section-sub">작은 행동부터 시작해 보세요.</p></div><button class="text-btn" data-go="missions">전체 보기 →</button></div>
+    <div class="card mission"><div class="mission-icon">🥤</div><div class="grow"><h3>텀블러 사용하기</h3><p>일회용 컵 대신 개인 텀블러 사용 인증</p><span class="pill normal">NORMAL</span><span class="reward">+20 코인</span></div><button class="primary" data-mission="tumbler">인증하기</button></div>
+  </section>
+  <section class="section"><div class="section-head"><div><h2>미션 둘러보기</h2><p class="section-sub">난이도에 따라 보상이 달라져요.</p></div></div><div class="grid two" id="homeMissions"></div></section>
+  <section class="section"><div class="section-head"><div><h2>빠른 메뉴</h2></div></div><div class="quick-grid"><button class="quick" data-go="missions"><span>📸</span><strong>실천 인증하기</strong><small class="small">활동 사진 제출</small></button><button class="quick" data-go="shop"><span>🛍️</span><strong>도안 상점</strong><small class="small">코인으로 도안 교환</small></button><button class="quick" data-go="mypage"><span>🪙</span><strong>코인 내역</strong><small class="small">적립·사용 기록</small></button><button class="quick" data-go="mypage"><span>📚</span><strong>내 도안</strong><small class="small">구매한 도안 확인</small></button></div></section>
+  <section class="section"><div class="section-head"><div><h2>인기 DIY 도안</h2><p class="section-sub">모은 코인으로 직접 만들어 보세요.</p></div><button class="text-btn" data-go="shop">상점 보기 →</button></div><div class="grid two" id="homeProducts"></div></section>
+  <p class="footer-note">RE:WARD는 학교 해커톤 시연용 가상 리워드 서비스입니다.</p>
+</section>
+
+<section class="screen" id="missions">
+  <button class="back" data-go="home">← 홈으로</button><h1 class="page-title">친환경 활동 선택</h1><p class="section-sub">실제로 안전하게 실천한 활동을 선택해 인증해 주세요.</p>
+  <div class="grid two" id="missionList"></div>
+  <div class="notice">📌 사진 인증은 교육용 규칙 기반 시뮬레이션입니다. 실제 AI 이미지 인식이나 외부 관리자 검증은 수행하지 않습니다.</div>
+</section>
+
+<section class="screen" id="submit">
+  <button class="back" data-go="missions">← 활동 목록</button><h1 class="page-title">활동 인증하기</h1><p class="section-sub" id="selectedSummary"></p>
+  <form id="proofForm">
+    <label class="form-label" for="proofPhoto">인증 사진 <span style="color:#b94343">*</span></label>
+    <div class="upload"><div style="font-size:30px">📷</div><strong>활동 사진을 첨부해 주세요</strong><p class="hint">휴대폰에서는 카메라 촬영 또는 갤러리 선택이 가능합니다.</p><input id="proofPhoto" type="file" accept="image/*" capture="environment" required><img id="photoPreview" class="preview" alt="선택한 인증 사진 미리보기"></div>
+    <label class="form-label" for="proofDesc">활동 설명 <span style="color:#b94343">*</span></label>
+    <textarea class="field" id="proofDesc" maxlength="300" placeholder="언제, 어디서, 어떤 활동을 했는지 간단히 적어 주세요." required></textarea><p class="hint">예: 점심시간에 개인 텀블러에 음료를 담아 마셨습니다.</p>
+    <div class="notice">🔒 얼굴, 명찰, 주소, 차량 번호 등 개인정보가 보이지 않는 사진을 사용하세요. 외부 활동은 안전한 장소에서 진행하고 무리하지 마세요.</div>
+    <label style="display:flex;gap:9px;align-items:flex-start;margin:12px 0"><input type="checkbox" id="privacyCheck" required style="margin-top:4px"> <span class="small">사진에 불필요한 개인정보가 없는지 확인했습니다.</span></label>
+    <button class="primary wide" type="submit">인증 제출하기</button>
+  </form>
+</section>
+
+<section class="screen" id="result">
+  <button class="back" data-go="home">← 홈으로</button><div class="card result-box" id="resultContent"></div>
+  <div class="section"><button class="primary wide" data-go="shop">도안 상점 둘러보기</button></div>
+  <div class="section"><button class="secondary wide" data-go="mypage">마이페이지에서 기록 확인</button></div>
+</section>
+
+<section class="screen" id="shop">
+  <button class="back" data-go="home">← 홈으로</button><h1 class="page-title">도안 상점</h1><p class="section-sub">코인으로 DIY·업사이클링 도안을 교환해 보세요.</p>
+  <div class="coin-card"><div><small>AVAILABLE COINS</small><div class="coin-label">현재 사용 가능한 코인</div></div><div><span class="coin-num" id="shopCoins">0</span> 🪙</div></div>
+  <div class="tabs" id="shopTabs"><button class="tab active" data-filter="all">전체</button><button class="tab" data-filter="paper">종이·재활용</button><button class="tab" data-filter="reuse">생활 업사이클링</button></div>
+  <div class="grid two" id="productList"></div>
+</section>
+
+<section class="screen" id="detail">
+  <button class="back" data-go="shop">← 상점으로</button><div id="detailContent"></div>
+</section>
+
+<section class="screen" id="mypage">
+  <button class="back" data-go="home">← 홈으로</button><h1 class="page-title">마이페이지</h1><p class="section-sub">나의 친환경 실천과 리워드를 모아보세요.</p>
+  <div class="coin-card"><div><small>MY WALLET</small><div class="coin-label">현재 보유 코인</div></div><div><span class="coin-num" id="myCoins">0</span> 🪙</div></div>
+  <div class="section"><h2>코인 적립 및 사용 내역</h2><div class="card" id="coinHistory"></div></div>
+  <div class="section"><h2>활동 인증 기록</h2><div class="card" id="activityHistory"></div></div>
+  <div class="section"><h2>구매한 도안</h2><div class="card" id="ownedProducts"></div></div>
+  <div class="section"><button class="secondary wide" id="exportBtn">내 기록 JSON 백업하기</button><p class="hint">이 기기에 저장된 시연 데이터를 파일로 백업합니다.</p></div>
+</section>
+</main>
+</div>
+<nav class="bottom-nav" aria-label="주요 메뉴"><div class="nav-inner">
+<button class="nav-btn active" data-go="home"><span>⌂</span>홈</button><button class="nav-btn" data-go="missions"><span>🌿</span>미션</button><button class="nav-btn" data-go="shop"><span>🛍️</span>상점</button><button class="nav-btn" data-go="mypage"><span>👤</span>마이페이지</button>
+</div></nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><h3 id="modalTitle">안내</h3><p id="modalText"></p><div class="modal-actions"><button class="secondary" id="modalCancel">취소</button><button class="primary" id="modalOk">확인</button></div></div></div>
+<script>
+"use strict";
+
+/* Supabase 공개 클라이언트 설정: Publishable Key만 사용합니다. */
+const SUPABASE_URL = "https://oiqyymutnaowruxqsdik.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_D5r9L0vUWmKaJD2mED3B_g_S7e7OB0H";
+const AUTH_KEY = "reward_supabase_auth_v1";
+const LOCAL_KEY = "reward_demo_v2";
+
+const MISSIONS = [
+ {id:"recycle",name:"올바른 분리수거",level:"EASY",coins:10,icon:"♻️",desc:"페트병의 내용물을 비우고 라벨을 분리한 뒤 재질에 맞게 배출하기"},
+ {id:"tumbler",name:"텀블러 사용하기",level:"NORMAL",coins:20,icon:"🥤",desc:"일회용 컵 대신 개인 텀블러 사용하기"},
+ {id:"plogging",name:"플로깅 참여하기",level:"CHALLENGE",coins:50,icon:"🧤",desc:"안전한 장소에서 걸으며 주변 쓰레기 줍기"}
+];
+const PRODUCTS = [
+ {id:"p1",name:"폐지 업사이클 메모패드",category:"paper",price:30,icon:"📒",materials:"깨끗한 폐지, 두꺼운 종이, 집게, 풀",steps:["폐지를 같은 크기로 자릅니다.","두꺼운 종이를 앞뒤 표지로 준비합니다.","종이 윗부분을 집게나 종이 제본으로 고정합니다."],safety:"가위 사용 시 날을 사람 쪽으로 향하지 말고, 자를 때는 보호자의 안내를 받으세요.",description:"사용한 종이를 새 메모패드로 다시 활용하는 간단한 도안입니다."},
+ {id:"p2",name:"페트병 미니 화분",category:"reuse",price:50,icon:"🪴",materials:"깨끗한 페트병, 흙, 작은 식물, 꾸미기용 종이",steps:["페트병을 깨끗이 씻고 완전히 말립니다.","절단이 필요한 부분은 성인의 도움을 받아 안전하게 준비합니다.","흙과 식물을 넣고 물 빠짐을 확인합니다."],safety:"페트병 절단은 날카로운 모서리가 생길 수 있으므로 성인이 도와야 합니다.",description:"버려질 수 있는 페트병을 작은 화분으로 재사용합니다."},
+ {id:"p3",name:"헌 티셔츠 에코백",category:"reuse",price:70,icon:"👜",materials:"깨끗한 헌 티셔츠, 천용 가위 또는 묶을 끈",steps:["티셔츠를 세탁하고 완전히 말립니다.","밑단을 묶거나 안전한 방법으로 고정합니다.","소매와 목 부분을 손잡이 모양으로 정리합니다."],safety:"천을 자를 때 가위 끝을 몸 바깥쪽으로 향하게 하고, 어려운 작업은 성인과 함께하세요.",description:"입지 않는 티셔츠를 장바구니로 다시 사용하는 업사이클링 아이디어입니다."},
+ {id:"p4",name:"재활용 종이 씨앗 카드",category:"paper",price:50,icon:"🌼",materials:"재활용 종이 조각, 물, 씨앗, 체",steps:["종이를 잘게 찢어 물에 불립니다.","종이 펄프를 체에 얇게 펴서 물기를 뺍니다.","씨앗을 넣고 평평하게 말립니다."],safety:"씨앗을 먹지 말고, 식물 종류와 지역의 생태적 적합성을 확인한 뒤 심으세요.",description:"재활용 종이에 씨앗을 넣어 심을 수 있는 카드로 만듭니다."}
+];
+
+let state={coins:0,activities:[],ledger:[],owned:[]};
+let selectedMission=null, selectedProduct=null, currentFilter="all";
+let cloudMode=false, authSession=null, currentUserId=null, nickname="호연고 학생";
+let toastTimer=null;
+
+function localLoad(){try{const x=JSON.parse(localStorage.getItem(LOCAL_KEY));if(x&&typeof x.coins==="number")return x}catch(e){}return{coins:0,activities:[],ledger:[],owned:[]}}
+function localSave(){localStorage.setItem(LOCAL_KEY,JSON.stringify(state));renderAll()}
+function setCloudStatus(text,color="#68766c"){const el=document.getElementById("cloudStatus");if(el){el.textContent=text;el.style.color=color}}
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.style.display="block";clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display="none",2800)}
+function showModal(title,msg,okText="확인",action=null){document.getElementById("modalTitle").textContent=title;document.getElementById("modalText").textContent=msg;document.getElementById("modalOk").textContent=okText;modalAction=action;document.getElementById("modalBack").style.display="flex"}
+let modalAction=null;
+document.getElementById("modalCancel").onclick=()=>document.getElementById("modalBack").style.display="none";
+document.getElementById("modalOk").onclick=()=>{document.getElementById("modalBack").style.display="none";if(modalAction)modalAction();modalAction=null};
+
+/* Supabase REST/Auth: 별도 SDK 없이 fetch로 연결합니다. */
+function apiHeaders(token=authSession?.access_token){return{"apikey":SUPABASE_PUBLISHABLE_KEY,"Authorization":`Bearer ${token||SUPABASE_PUBLISHABLE_KEY}`,"Content-Type":"application/json"}}
+async function api(path,options={},retry=true){
+ const headers={...apiHeaders(),...(options.headers||{})};
+ let res=await fetch(SUPABASE_URL+path,{...options,headers});
+ if(res.status===401&&retry&&authSession?.refresh_token){
+   await refreshSession();
+   return api(path,options,false);
+ }
+ const raw=await res.text();let data=null;try{data=raw?JSON.parse(raw):null}catch(e){data=raw}
+ if(!res.ok)throw new Error(data?.message||data?.error_description||data?.hint||data?.error||`Supabase 오류 (${res.status})`);
+ return data;
+}
+async function refreshSession(){
+ const res=await fetch(SUPABASE_URL+"/auth/v1/token?grant_type=refresh_token",{method:"POST",headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json"},body:JSON.stringify({refresh_token:authSession.refresh_token})});
+ if(!res.ok)throw new Error("로그인 세션을 갱신하지 못했습니다.");
+ authSession=await res.json();localStorage.setItem(AUTH_KEY,JSON.stringify(authSession));currentUserId=authSession.user?.id;
+}
+async function signIn(){
+ let saved=null;try{saved=JSON.parse(localStorage.getItem(AUTH_KEY)||"null")}catch(e){}
+ if(saved?.refresh_token){authSession=saved;currentUserId=saved.user?.id;try{await refreshSession();return}catch(e){localStorage.removeItem(AUTH_KEY);authSession=null}}
+ const res=await fetch(SUPABASE_URL+"/auth/v1/signup",{method:"POST",headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json"},body:JSON.stringify({data:{app:"RE:WARD"}})});
+ const raw=await res.text();let data;try{data=JSON.parse(raw)}catch(e){data={message:raw}}
+ if(!res.ok||!data.access_token)throw new Error(data.message||"익명 로그인에 실패했습니다. Supabase에서 Anonymous Sign-Ins 설정을 확인해 주세요.");
+ authSession=data;currentUserId=data.user?.id;localStorage.setItem(AUTH_KEY,JSON.stringify(data));
+}
+async function uploadProof(file){
+ const safeName=file.name.replace(/[^a-zA-Z0-9._-]/g,"_").slice(-80)||"proof.jpg";
+ const path=`${currentUserId}/${Date.now()}_${safeName}`;
+ const res=await fetch(`${SUPABASE_URL}/storage/v1/object/reward-proofs/${path}`,{method:"POST",headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Authorization":`Bearer ${authSession.access_token}`,"Content-Type":file.type||"application/octet-stream","x-upsert":"false"},body:file});
+ if(!res.ok){const t=await res.text();throw new Error("사진 저장 실패: "+t.slice(0,180))}
+ return path;
+}
+async function loadCloudData(){
+ const [profile,acts,ledger,owned]=await Promise.all([
+  api(`/rest/v1/profiles?select=nickname&user_id=eq.${currentUserId}`),
+  api(`/rest/v1/activities?select=*&order=created_at.desc`),
+  api(`/rest/v1/coin_transactions?select=*&order=created_at.desc`),
+  api(`/rest/v1/purchases?select=*&order=created_at.desc`)
+ ]);
+ nickname=profile?.[0]?.nickname||"호연고 학생";
+ state.activities=(acts||[]).map(a=>({id:a.id,missionId:a.mission_id,name:MISSIONS.find(m=>m.id===a.mission_id)?.name||a.mission_id,level:MISSIONS.find(m=>m.id===a.mission_id)?.level||"",coins:a.coins_awarded,status:a.status,reason:a.reason,desc:a.description,date:a.created_at,photoName:a.photo_name}));
+ state.ledger=(ledger||[]).map(x=>({id:x.id,type:x.type,amount:x.amount,label:x.label,date:x.created_at}));
+ state.owned=(owned||[]).map(x=>({productId:x.product_id,date:x.created_at,price:x.price}));
+ state.coins=state.ledger.reduce((sum,x)=>sum+Number(x.amount||0),0);
+ cloudMode=true;localSave();setCloudStatus("☁ 서버 연결됨","#247a45");document.getElementById("profileBtn").textContent=nickname;
+}
+async function init(){
+ state=localLoad();renderAll();setCloudStatus("☁ 연결 확인 중");
+ try{await signIn();await loadCloudData();toast("RE:WARD 서버에 연결되었습니다.");}
+ catch(err){cloudMode=false;setCloudStatus("로컬 시연 모드","#a36a0a");document.getElementById("profileBtn").textContent="닉네임";console.warn(err);toast("Supabase 연결 준비가 완료되지 않아 이 기기에서 시연합니다. SQL 설정을 먼저 실행해 주세요.");}
+ renderAll();
+}
+
+/* 화면 이동 */
+function go(id){document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("active",s.id===id));document.querySelectorAll(".nav-btn").forEach(b=>b.classList.toggle("active",b.dataset.go===id||(id==="detail"&&b.dataset.go==="shop")||(id==="submit"&&b.dataset.go==="missions")||(id==="result"&&b.dataset.go==="home")));window.scrollTo({top:0,behavior:"smooth"});if(id==="shop")renderShop();if(id==="mypage")renderMy()}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}const m=e.target.closest("[data-mission]");if(m)startMission(m.dataset.mission);const p=e.target.closest("[data-product]");if(p)openProduct(p.dataset.product)});
+
+function startMission(id){
+ selectedMission=MISSIONS.find(m=>m.id===id);if(!selectedMission)return;
+ const duplicate=state.activities.some(a=>a.missionId===id&&a.status==="승인 완료");
+ if(duplicate){showModal("이미 인증한 활동이에요","같은 미션은 중복 보상을 받을 수 없습니다. 다른 친환경 활동에 참여해 보세요.");return}
+ document.getElementById("selectedSummary").textContent=`${selectedMission.name} · ${selectedMission.level} · 승인 시 ${selectedMission.coins}코인`;
+ document.getElementById("proofForm").reset();document.getElementById("photoPreview").style.display="none";document.getElementById("photoPreview").src="";go("submit");
+}
+document.getElementById("proofPhoto").addEventListener("change",e=>{
+ const f=e.target.files[0],img=document.getElementById("photoPreview");if(!f){img.style.display="none";return}
+ if(!f.type.startsWith("image/")){toast("이미지 파일만 첨부할 수 있습니다.");e.target.value="";return}
+ if(f.size>8*1024*1024){toast("사진은 8MB 이하로 선택해 주세요.");e.target.value="";return}
+ img.src=URL.createObjectURL(f);img.style.display="block";
+});
+function evaluateMission(m,desc){
+ let status="추가 확인 필요",reason="설명만으로 미션 조건을 충분히 확인하기 어렵습니다. 활동 상황을 더 구체적으로 적어 주세요.";
+ if(/안 했|하지 않았|실천하지|활동하지|참여하지/.test(desc))return{status:"반려",reason:"설명에 해당 활동을 수행하지 않았다는 내용이 포함되어 인증이 반려되었습니다."};
+ if(m.id==="recycle"&&["페트병","라벨","분리배출"].filter(k=>desc.includes(k)).length>=2)return{status:"승인 완료",reason:"설명에 페트병 분리배출 관련 조건이 포함되어 교육용 규칙 검사를 통과했습니다."};
+ if(m.id==="tumbler"&&desc.includes("텀블러")&&/사용|마셨|담았|이용/.test(desc))return{status:"승인 완료",reason:"텀블러 사용 상황을 설명에서 확인해 교육용 규칙 검사를 통과했습니다."};
+ if(m.id==="plogging"&&desc.includes("쓰레기")&&desc.includes("줍")&&/학교|공원|거리|분|주변/.test(desc))return{status:"승인 완료",reason:"쓰레기 수거 활동과 장소·시간 관련 설명이 포함되어 교육용 규칙 검사를 통과했습니다."};
+ if(desc.trim().length<12)return{status:"추가 확인 필요",reason:"활동 설명이 짧습니다. 무엇을 어디서 실천했는지 더 자세히 적어 주세요."};
+ return{status,reason};
+}
+document.getElementById("proofForm").addEventListener("submit",async e=>{
+ e.preventDefault();if(!selectedMission){toast("먼저 활동을 선택해 주세요.");return}
+ const file=document.getElementById("proofPhoto").files[0],desc=document.getElementById("proofDesc").value.trim();
+ if(!file||!desc){toast("사진과 활동 설명을 모두 입력해 주세요.");return}
+ if(!document.getElementById("privacyCheck").checked){toast("개인정보 확인 항목에 체크해 주세요.");return}
+ if(state.activities.some(a=>a.missionId===selectedMission.id&&a.status==="승인 완료")){toast("이미 보상을 받은 미션입니다.");return}
+ const btn=e.submitter;btn.disabled=true;btn.textContent="제출 중…";
+ try{
+   let photoPath=null;
+   if(cloudMode)photoPath=await uploadProof(file);
+   const verdict=evaluateMission(selectedMission,desc);
+   let activity;
+   if(cloudMode){
+     const result=await api("/rest/v1/rpc/reward_submit_activity",{method:"POST",body:JSON.stringify({p_mission_id:selectedMission.id,p_description:desc,p_photo_path:photoPath,p_photo_name:file.name})});
+     await loadCloudData();activity=state.activities.find(a=>a.id===result.activity_id)||state.activities[0];
+   }else{
+     activity={id:"A"+Date.now(),missionId:selectedMission.id,name:selectedMission.name,level:selectedMission.level,coins:selectedMission.coins,status:verdict.status,reason:verdict.reason,desc,date:new Date().toISOString(),photoName:file.name};
+     state.activities.unshift(activity);
+     if(verdict.status==="승인 완료"){state.coins+=selectedMission.coins;state.ledger.unshift({id:"L"+Date.now(),type:"적립",amount:selectedMission.coins,label:selectedMission.name,date:activity.date})}
+     localSave();
+   }
+   showResult(activity);go("result");
+ }catch(err){console.error(err);toast("인증 제출에 실패했습니다: "+err.message)}
+ finally{btn.disabled=false;btn.textContent="인증 제출하기"}
+});
+function showResult(a){const ok=a.status==="승인 완료",rejected=a.status==="반려";document.getElementById("resultContent").innerHTML=`<div class="result-icon">${ok?"🎉":rejected?"❌":"🔎"}</div><span class="status ${ok?"approved":rejected?"rejected":"pending"}">${a.status}</span><h2>${a.name}</h2><p>${a.reason}</p><div class="muted-box">${ok?`<strong>+${a.coins} 코인 적립 완료!</strong>`:rejected?"반려된 인증에는 코인이 지급되지 않습니다.":"추가 확인 전까지 코인이 지급되지 않습니다."}<br>현재 보유 코인: <strong>${state.coins} 코인</strong></div><p class="small" style="margin-top:14px">교육용 규칙 기반 시연 결과이며, 실제 AI 이미지 판독이나 현장 확인 결과가 아닙니다.</p>`}
+function missionCard(m){return `<article class="card mission"><div class="mission-icon">${m.icon}</div><div class="grow"><h3>${m.name}</h3><p>${m.desc}</p><span class="pill ${m.level.toLowerCase()}">${m.level}</span> <span class="reward">+${m.coins} 코인</span></div><button class="primary" data-mission="${m.id}">선택</button></article>`}
+function productCard(p){return `<article class="card product"><div class="thumb">${p.icon}</div><div class="grow"><h3>${p.name}</h3><p>${p.description}</p><div class="price-row"><span class="price">🪙 ${p.price} 코인</span><button class="secondary" data-product="${p.id}">상세보기</button></div></div></article>`}
+function renderAll(){
+ ["homeCoins","shopCoins","myCoins"].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=state.coins});
+ document.getElementById("homeMissions").innerHTML=MISSIONS.map(missionCard).join("");
+ document.getElementById("missionList").innerHTML=MISSIONS.map(missionCard).join("");
+ document.getElementById("homeProducts").innerHTML=PRODUCTS.slice(0,2).map(productCard).join("");
+ renderShop();renderMy();
+}
+function renderShop(){document.getElementById("shopCoins").textContent=state.coins;document.getElementById("productList").innerHTML=PRODUCTS.filter(p=>currentFilter==="all"||p.category===currentFilter).map(productCard).join("")||'<div class="empty">해당 분류의 도안이 없습니다.</div>';document.querySelectorAll("#shopTabs .tab").forEach(b=>b.classList.toggle("active",b.dataset.filter===currentFilter))}
+document.getElementById("shopTabs").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(!b)return;currentFilter=b.dataset.filter;renderShop()});
+function openProduct(id){
+ selectedProduct=PRODUCTS.find(p=>p.id===id);if(!selectedProduct)return;const p=selectedProduct,owned=state.owned.some(x=>x.productId===id);
+ document.getElementById("detailContent").innerHTML=`<h1 class="page-title">${p.name}</h1><div class="detail-art">${p.icon}</div><p style="margin:14px 0">${p.description}</p><div class="card"><div class="section-head"><h2>도안 정보</h2><span class="coin-chip">🪙 ${p.price} 코인</span></div><strong>준비 재료</strong><p>${p.materials}</p><hr style="border:0;border-top:1px solid var(--line);margin:14px 0"><strong>제작 방법</strong><ol class="steps">${p.steps.map(s=>`<li>${s}</li>`).join("")}</ol><div class="notice">⚠️ 안전 주의: ${p.safety}</div></div><div class="section">${owned?'<button class="primary wide" id="downloadPlan">도안 PDF로 저장하기</button>':`<button class="primary wide" id="buyPlan">🪙 ${p.price}코인으로 교환하기</button>`}<p class="hint">${owned?"구매한 도안은 마이페이지에서도 다시 열 수 있습니다.":"교환하면 보유 코인에서 가격만큼 차감됩니다."}</p></div>`;
+ go("detail");const buy=document.getElementById("buyPlan");if(buy)buy.onclick=()=>buyProduct(p);const dl=document.getElementById("downloadPlan");if(dl)dl.onclick=()=>printPlan(p);
+}
+async function buyProduct(p){
+ if(state.owned.some(x=>x.productId===p.id)){toast("이미 보유한 도안입니다.");return}
+ if(state.coins<p.price){showModal("코인이 부족해요",`${p.price-state.coins}코인이 더 필요합니다. EASY 분리수거(+10), NORMAL 텀블러(+20), CHALLENGE 플로깅(+50) 활동을 인증해 보세요.`);return}
+ showModal("도안을 교환할까요?",`${p.name} 도안을 ${p.price}코인으로 교환합니다. 교환 후 잔액은 ${state.coins-p.price}코인입니다.`,"교환하기",async()=>{
+  try{
+   if(cloudMode){await api("/rest/v1/rpc/reward_buy_product",{method:"POST",body:JSON.stringify({p_product_id:p.id})});await loadCloudData();}
+   else{state.coins-=p.price;state.owned.unshift({productId:p.id,date:new Date().toISOString(),price:p.price});state.ledger.unshift({id:"L"+Date.now(),type:"사용",amount:-p.price,label:p.name,date:new Date().toISOString()});localSave();}
+   toast("도안 교환이 완료되었습니다.");openProduct(p.id);
+  }catch(err){toast("교환에 실패했습니다: "+err.message)}
+ });
+}
+function printPlan(p){
+ const w=window.open("","_blank");if(!w){toast("팝업이 차단되었습니다. 팝업 허용 후 다시 시도해 주세요.");return}
+ w.document.write(`<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>${p.name} - RE:WARD 도안</title><style>body{font-family:Arial,sans-serif;color:#203b2a;max-width:760px;margin:40px auto;padding:20px;line-height:1.7}h1{color:#17633a}.hero{font-size:70px;background:#edf4e8;padding:20px;text-align:center;border-radius:16px}li{margin:8px 0}.note{background:#fff5d5;padding:12px;border-radius:8px}@media print{button{display:none}}</style></head><body><h1>RE:WARD DIY 도안</h1><div class="hero">${p.icon}</div><h2>${p.name}</h2><p>${p.description}</p><h3>준비 재료</h3><p>${p.materials}</p><h3>제작 방법</h3><ol>${p.steps.map(s=>`<li>${s}</li>`).join("")}</ol><p class="note"><b>안전 주의:</b> ${p.safety}</p><p>RE:WARD · 호연고 해커톤 교육용 도안</p><button onclick="window.print()">인쇄 / PDF로 저장</button><script>window.onload=()=>setTimeout(()=>window.print(),300)<\/script></body></html>`);
+ w.document.close();
+}
+function renderMy(){
+ document.getElementById("myCoins").textContent=state.coins;
+ const ledger=document.getElementById("coinHistory"),acts=document.getElementById("activityHistory"),owned=document.getElementById("ownedProducts");
+ ledger.innerHTML=state.ledger.length?state.ledger.map(x=>`<div class="history-row"><div><strong>${x.label}</strong><div class="small">${new Date(x.date).toLocaleString("ko-KR")}</div></div><strong style="color:${x.amount>0?"#247a45":"#b94343"}">${x.amount>0?"+":""}${x.amount} 코인</strong></div>`).join(""):'<div class="empty">아직 코인 내역이 없습니다.</div>';
+ acts.innerHTML=state.activities.length?state.activities.map(a=>`<div class="history-row"><div><strong>${a.name}</strong><div class="small">${new Date(a.date).toLocaleString("ko-KR")} · ${a.reason}</div></div><span class="status ${a.status==="승인 완료"?"approved":a.status==="반려"?"rejected":"pending"}">${a.status}</span></div>`).join(""):'<div class="empty">아직 인증 기록이 없습니다.</div>';
+ owned.innerHTML=state.owned.length?state.owned.map(x=>{const p=PRODUCTS.find(p=>p.id===x.productId);return `<div class="history-row"><div><strong>${p?p.name:"삭제된 도안"}</strong><div class="small">구매일 ${new Date(x.date).toLocaleDateString("ko-KR")}</div></div><button class="secondary" data-product="${x.productId}">열기</button></div>`}).join(""):'<div class="empty">구매한 도안이 없습니다.</div>';
+}
+document.getElementById("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify({nickname,coins:state.coins,activities:state.activities,ledger:state.ledger,owned:state.owned},null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="reward-my-records.json";a.click();URL.revokeObjectURL(url);toast("기록 백업 파일을 저장했습니다.")};
+document.getElementById("profileBtn").onclick=async()=>{
+ const next=prompt("마이페이지에 표시할 닉네임을 입력하세요.",nickname);if(next===null)return;const clean=next.trim().slice(0,20);if(!clean){toast("닉네임을 한 글자 이상 입력해 주세요.");return}
+ try{if(cloudMode){await api(`/rest/v1/profiles?user_id=eq.${currentUserId}`,{method:"PATCH",headers:{"Prefer":"return=minimal"},body:JSON.stringify({nickname:clean})})}nickname=clean;document.getElementById("profileBtn").textContent=nickname;toast("닉네임을 저장했습니다.");}
+ catch(err){toast("닉네임 저장 실패: "+err.message)}
+};
+document.getElementById("resetBtn").onclick=()=>showModal("이 기기의 로컬 시연 데이터를 초기화할까요?","서버에 저장된 데이터는 삭제되지 않습니다. 서버 데이터 초기화는 Supabase 관리자 화면에서 별도로 진행해야 합니다.","초기화",()=>{if(cloudMode){toast("서버 데이터는 안전을 위해 앱에서 일괄 삭제할 수 없습니다.");return}state={coins:0,activities:[],ledger:[],owned:[]};localSave();go("home");toast("로컬 시연 데이터가 초기화되었습니다.")});
+renderAll();init();
+</script>
